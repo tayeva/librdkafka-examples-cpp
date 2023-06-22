@@ -2,7 +2,7 @@
 
 This is a producer consumer example utilizing the librdkafka library. 
 
-The implementation uses Docker and docker-compose to deploy the application.
+The implementation uses Docker and docker-compose to deploy the application. It runs single, standalone instances of kafka and zookeeper. The demonstrations uses one producer, one consumer, and one topic.
 
 ## Architecture
 
