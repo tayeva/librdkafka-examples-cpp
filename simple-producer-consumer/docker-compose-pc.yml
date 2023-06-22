@@ -1,0 +1,22 @@
+version: '3'
+services:
+
+  producer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - demo-network
+    entrypoint: ./build/producer
+
+  consumer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - demo-network
+    entrypoint: ./build/consumer
+
+networks:
+  demo-network:
+    driver: bridge
