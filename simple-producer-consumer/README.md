@@ -29,7 +29,7 @@ Open up another terminal and start the producer consumer services:
 
 `docker-compose -f docker-compose-pc.yml up`
 
-By starting both of these services in two separate terminals in this manner you should see the aggregate logs for both sets of services. Once the processes are down you can hit CTRL+C to stop them individually or open a third terminal and run the down commands. If you use CTRL+C to stop the commands you should still clean up the resources with the down commands.
+By starting both of these services in two separate terminals in this manner you should see the aggregated logs for both sets of services. Once the producer and consumer processes are done you can hit CTRL+C to stop them individually or open a third terminal and run the down commands. If you use CTRL+C to stop the commands you should still clean up the resources with the down commands.
 
 `docker-compose -f docker-compose-core.yml down`
 
